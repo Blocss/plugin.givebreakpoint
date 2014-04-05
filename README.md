@@ -1,4 +1,4 @@
-# Blocss plugin - Givebreakpoint – v1.0.0
+# Blocss plugin - Givebreakpoint – v1.0.1
 
 A [Blocss](https://github.com/Blocss/blocss/) plugin to read out the rendered breakpoint with javascript.
 

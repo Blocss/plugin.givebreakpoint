@@ -1,4 +1,4 @@
-/*  giveBreakpoint - v1.0.0
+/*  giveBreakpoint - v1.0.1
     MIT License
     A Blocss plugin to read out the rendered breakpoint with javascript.
     @author Bram Smulders - @bramsmulders
