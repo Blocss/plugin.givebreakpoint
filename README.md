@@ -10,8 +10,6 @@ Read more about [Blocss](https://blocss.github.io/blocss).
 * Download: [zip](https://github.com/Blocss/plugin.givebreakpoint/zipball/master)
 * Git: `git clone https://github.com/Blocss/plugin.givebreakpoint`
 
-## Usage
-
 ## Browser support
 
 * Google Chrome (latest)
