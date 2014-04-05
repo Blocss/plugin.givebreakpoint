@@ -1,8 +1,6 @@
 # The usual
 .DS_Store
 .sass-cache/
-.codekit-cache/
-config.codekit
 
 # Don't bundle any compiled css & test files
 test.scss
