@@ -1,5 +1,6 @@
-/*  giveBreakpoint
-    Gives the viewport set on content of body:before set in CSS
+/*  giveBreakpoint - v1.0.0
+    MIT License
+    A Blocss plugin to read out the rendered breakpoint with javascript.
     @author Bram Smulders - @bramsmulders
 \*----------------------------------------------------------------------------*/
 
