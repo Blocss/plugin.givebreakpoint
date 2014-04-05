@@ -1,0 +1,5 @@
+{
+    "name": "blocss-plugin.givebreakpoint",
+    "version": "1.0.0",
+    "main": "_plugin.givebreakpoint.scss"
+}

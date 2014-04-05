@@ -1,0 +1,42 @@
+/*! blocss-plugin.givebreakpoint v1.0.0 | MIT License | github.com/Blocss */
+
+/*----------------------------------------------------------------------------*\
+    GIVEBREAKPOINT
+    This plugin can be used to read out the rendered breakpoint with javascript.
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+// Module can be disabled by switching `$use-plugin-givebreakpoint` to `false`
+$use-plugin-givebreakpoint:         true                            !default;
+
+
+
+@if $use-plugin-givebreakpoint {
+/**
+ * Pass rendered breakpoint into the body, to read this out in javascript
+ *
+ * 1. We cannot hide that shit with `display: none` ’cause of Chrome removing
+ *    the before element from the dom, instead we hide it as per: h5bp.com/v
+ * 2. Put the breakpoint name into the content
+ */
+body:before {
+    position: absolute; /* 1 */
+    width: 1px; /* 1 */
+    height: 1px; /* 1 */
+    padding: 0; /* 1 */
+    margin: -1px; /* 1 */
+    overflow: hidden; /* 1 */
+    clip: rect(0 0 0 0); /* 1 */
+    border: 0; /* 1 */
+
+    @each $breakpoint in $breakpoints { /* 2 */
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+        @media only screen and #{$declaration} {
+            content: "#{$name}";
+        }
+    }
+}
+}
